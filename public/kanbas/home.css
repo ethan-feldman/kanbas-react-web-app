@@ -1,0 +1,143 @@
+.btn-primary.override-bs {
+  background-color: #a90dfd;
+
+  border-color: #fd0d51;
+
+  border-width: 10px;
+
+  border-radius: 20px;
+
+  border-style: dashed;
+
+  font-size: 2em;
+
+  font-weight: bolder;
+}
+
+.menu-list {
+  display: inline-block;
+  width: 84px;
+  height: 800px;
+  text-align: center;
+  background-color: black;
+  float: left;
+  padding: 0px;
+}
+
+.link-style {
+  color: white;
+  text-decoration: none;
+}
+
+.link:active:hover {
+  color: red;
+}
+
+a:hover {
+  color: red;
+}
+
+.remove-link-color {
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    color: rgb(80, 176, 133);
+    text-decoration: none;
+  }
+}
+
+a:active {
+  color: white;
+}
+
+.wd-background-color-white {
+  background-color: white;
+}
+
+.wd-link-color-red {
+  color: red;
+}
+
+.li {
+  position: relative;
+  float: left;
+  list-style-type: none;
+  float: left;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.color-red {
+  color: red;
+}
+
+.container-override {
+  float: left;
+}
+
+.div-class {
+  float: left;
+}
+
+.wd-course-nav {
+  padding-left: 0px;
+}
+.wd-course-nav li a {
+  padding-left: 0px;
+  text-decoration: none;
+  color: red;
+}
+
+.wd-course-nav li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  list-style-type: none;
+}
+
+.wd-course-nav a:active {
+  border-left: 10px;
+  border-color: black;
+  float: left;
+}
+
+.wd-menu-col {
+  width: 84px;
+  flex-shrink: none;
+}
+
+.wd-card-style {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+
+.module-div {
+  display: block;
+  height: 24px;
+}
+
+.button-class {
+  float: end;
+}
+
+.wd-margin-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wd-margin-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.wd-black {
+  list-style-position: inside;
+  padding-left: 10px;
+  border-left: 2px solid black;
+}
+
+.wd-black a {
+  text-decoration: none;
+  color: black;
+}
