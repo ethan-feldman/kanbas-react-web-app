@@ -1,109 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Title</title>
-  </head>
 
-  <body>
-    <table border="0" width="100%">
-      <tr valign="top">
-        <td>
-          <ul>
-            <li>
-              <a href="/kanbas/profile/index">Account</a>
-            </li>
-            <li><a href="#">Dashboard</a></li>
-            <li>
-              <a href="/kanbas/home">Courses</a>
-            </li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
+<head>
+  <meta charset="UTF-8" />
+  <title>dashboard</title>
+  <link href="home.css" rel="stylesheet" />
+  <link
+    href="/vendors/bootstrap/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link href="/vendors/fontawesome/css/all.css" rel="stylesheet" />
+</head>
 
-        <td>
-          <ul>
-            <li>
-              <a href="/kanbas/home">Home</a>
-            </li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li>
-              <a href="/kanbas/assignments/index">Assignments</a>
-            </li>
-            <li><a href="#">Quizzes</a></li>
-            <li>
-              <a href="/kanbas/grades">Grades</a>
-            </li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="#">Settings</a></li>
-          </ul>
-        </td>
+<body>
+  <div class="row">
+    <div class="col-0 col-md-1 col-xl-1 wd-menu-col">
+        <ul class="menu-list">   
+            <div class="div-class"> 
+              <li class="li position-relative"> 
+                <img src="/images/northeasternlogo.jpeg" alt="logo" height="80" width="84">
+              </li>
+            </div>
+            <div class="div-class"> 
+            <li class="li position-relative">
+              <i class="fa fa-solid fa-user color-red fa-2x" aria-hidden="true"></i>
+              <a href="/kanbas/profile/index" class="link-style remove-link-color link:hover">Account<a>
+              </div>
 
-        <td>
-          <select>
-            <option value="GRDBOOK" selected>Gradebook</option>
-          </select>
-          <button type="button">Import</button>
-          <select>
-            <option value="EXPORT" selected>Export</option>
-          </select>
-          <button type="button">Configure</button>
+              <div class="div-class">
+                <li class="li ">
+                  <i class="fa fas fa-solid fa-tachometer-alt color-red fa-2x" aria-hidden="true"></i>
+                  <a href="/kanbas/dashboard.html" class="link-style stretched-link">Dashboard</a>
+              </li>
+              </div>
 
-          <h1>Student Names</h1>
-          <input type="text" placeholder="Search Students" />
-          <h1>Assignment Names</h1>
-          <input type="text" placeholder="Search Assignments" />
 
-          <button type="button">Apply Filters</button>
+              <div class="div-clas wd-background-color-white">
+                <li class="li ">
+                  <i class="fa fa-solid fa-book color-red fa-2x" aria-hidden="true"></i>
+                  <a href="/kanbas/home" class="link-style stretched-link wd-link-color-red">Courses</a>
+              </li>
+              </div>
+    
+              <div class="div-class">
+                <li class="li">
+                  <i class="fa fa-calendar color-red fa-2x" aria-hidden="true"></i>
+                  <a href="#" class="link-style remove-link-color stretched-link">Calendar</a>
+                </li>
+              </div>
+    
+              <div class="div-class">
+                <li class="li">
+                  <i class="fa fa-inbox color-red fa-2x" aria-hidden="true"></i>
+                  <a href="#" class="link-style remove-link-color stretched-link">Inbox</a>
+                </li>
+              </div>
+              <div class="div-class">
+                <li class="li">
+                  <i class="fa fa-regular fa-clock color-red fa-2x" aria-hidden="true"></i>
+                  <a href="#" class="link-style a:hover stretched-link">History</a>
+                </li>
+              </div>
+              <div class="div-class">
+                <li class="li">
+                  <i class="fa fa-computer color-red fa-2x" aria-hidden="true"></i>
+                  <a href="#" class="link-style a:hover stretched-link">Studio</a>
+                </li>
+              </div>
+              <div class="div-class">
+                <li class="li">
+                  <i class="fa fa-right-from-bracket color-red fa-2x" aria-hidden="true"></i>
+                  <a href="#" class="link-style a:hover stretched-link">Commons</a>
+                </li>
+                <div class="div-class">
+                  <li class="li">
+                    <i class="fa fa-question color-red fa-2x" aria-hidden="true"></i>
+                    <a href="#" class="link-style a:hover stretched-link">Help</a>
+                  </li>
+                </div>
+        </ul>
+      </div>
 
-          <table border="1" width="100%">
-            <thead>
-              <tr>
-                <th>Student Name</th>
-                <th>A1 SETUP Out of 100</th>
-                <th>A2 HTML Out of 100</th>
-                <th>A3 CSS Out of 100</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Alice Wonderland</td>
-                <td>98</td>
-                <td>89</td>
-                <td>87</td>
-              </tr>
-              <tr>
-                <td>Princess Leia</td>
-                <td>98</td>
-                <td>80</td>
-                <td>87</td>
-              </tr>
-              <tr>
-                <td>Luke Skywalker</td>
-                <td>99</td>
-                <td>88</td>
-                <td>92</td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
+
+      <div class="col-1 col-md-2 col-xl-2">
+
+        
+      <ul class="wd-course-nav">
+        <li >
+          <a href="/kanbas/home">Home</a>
+        </li>
+        <li><a href="#">Modules</a></li>
+        <li><a href="#">Piazza</a></li>
+        <li><a href="#">Zoom Meetings</a></li>
+        <li>
+          <a href="/kanbas/assignments/index">Assignments</a>
+        </li>
+        <li><a href="#">Quizzes</a></li>
+        <li>
+          <a href="/kanbas/grades" class="wd-black">Grades</a>
+        </li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">Panopto Video</a></li>
+        <li><a href="#">Discussions</a></li>
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Files</a></li>
+        <li><a href="#">Rubrics</a></li>
+        <li><a href="#">Outcomes</a></li>
+        <li><a href="#">Collaborations</a></li>
+        <li><a href="#">Syllabus</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+
+
+
+
+
+
+
+    <div class="col-12 col-md-4 col-xl-8"> 
+
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">CS4530.12611.2024210 </a></li>
+        <p> > </p>
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
+
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Student Name </th>
+          <th scope="col">A1 SETUP</th>
+          <th scope="col">A2 HTML</th>
+          <th scope="col">A3 CSS</th>
+          <th scope="col">A4 CSS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Doxa Asibily</td>
+          <td>100%</td>
+          <td>100%</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Tui Tien Buy</td>
+          <td>89%</td>
+          <td>100%</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Yetong Cheng</td>
+          <td>91%</td>
+          <td>100%</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Getrude Bi</td>
+          <td>91%</td>
+          <td>100%</td>
+          <td>100%</td>
+        </tr>
+      </tbody>
     </table>
-  </body>
-</html>
+
+      
+  </div>
+
+</body>
