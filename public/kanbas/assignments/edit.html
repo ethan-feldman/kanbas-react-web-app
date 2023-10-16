@@ -3,60 +3,180 @@
   <head>
     <meta charset="UTF-8" />
     <title>Title</title>
+
+    <link href="/kanbas/home.css" rel="stylesheet" />
+
+    <link
+      href="/vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/vendors/fontawesome/css/all.css" rel="stylesheet" />
   </head>
 
   <body>
-    <table border="0" width="100%">
-      <tr valign="top">
-        <td>
-          <ul>
-            <li>
-              <a href="/kanbas/profile/index">Account</a>
-            </li>
-            <li><a href="#">Dashboard</a></li>
-            <li>
-              <a href="/kanbas/home">Courses</a>
-            </li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
+    <div class="row">
+      <div class="col-0 col-md-1 col-xl-1 wd-menu-col">
+          <ul class="menu-list">   
+              <div class="div-class"> 
+                <li class="li position-relative"> 
+                  <img src="/public/images/northeasternlogo.jpeg" alt="logo" height="80" width="84">
+                </li>
+              </div>
+              <div class="div-class"> 
+              <li class="li position-relative">
+                <i class="fa fa-solid fa-user color-red fa-2x" aria-hidden="true"></i>
+                <a href="/kanbas/profile/index" class="link-style remove-link-color link:hover">Account<a>
+                </div>
+  
+                <div class="div-class">
+                  <li class="li ">
+                    <i class="fa fas fa-solid fa-tachometer-alt color-red fa-2x" aria-hidden="true"></i>
+                    <a href="/kanbas/dashboard.html" class="link-style stretched-link">Dashboard</a>
+                </li>
+                </div>
+  
+  
+                <div class="div-class wd-background-color-white">
+                  <li class="li ">
+                    <i class="fa fa-solid fa-book color-red fa-2x" aria-hidden="true"></i>
+                    <a href="/kanbas/home" class="link-style stretched-link wd-link-color-red">Courses</a>
+                </li>
+                </div>
+      
+                <div class="div-class">
+                  <li class="li">
+                    <i class="fa fa-calendar color-red fa-2x" aria-hidden="true"></i>
+                    <a href="#" class="link-style remove-link-color stretched-link">Calendar</a>
+                  </li>
+                </div>
+      
+                <div class="div-class">
+                  <li class="li">
+                    <i class="fa fa-inbox color-red fa-2x" aria-hidden="true"></i>
+                    <a href="#" class="link-style remove-link-color stretched-link">Inbox</a>
+                  </li>
+                </div>
+                <div class="div-class">
+                  <li class="li">
+                    <i class="fa fa-regular fa-clock color-red fa-2x" aria-hidden="true"></i>
+                    <a href="#" class="link-style a:hover stretched-link">History</a>
+                  </li>
+                </div>
+                <div class="div-class">
+                  <li class="li">
+                    <i class="fa fa-computer color-red fa-2x" aria-hidden="true"></i>
+                    <a href="#" class="link-style a:hover stretched-link">Studio</a>
+                  </li>
+                </div>
+                <div class="div-class">
+                  <li class="li">
+                    <i class="fa fa-right-from-bracket color-red fa-2x" aria-hidden="true"></i>
+                    <a href="#" class="link-style a:hover stretched-link">Commons</a>
+                  </li>
+                  <div class="div-class">
+                    <li class="li">
+                      <i class="fa fa-question color-red fa-2x" aria-hidden="true"></i>
+                      <a href="#" class="link-style a:hover stretched-link">Help</a>
+                    </li>
+                  </div>
           </ul>
-        </td>
+        </div>
+    
+  
+        <div class="col-1 col-md-2 col-xl-2">
+  
+          
+        <ul class="wd-course-nav">
+          <li>
+            <a href="/kanbas/home">Home</a>
+          </li>
+          <li><a href="#">Modules</a></li>
+          <li><a href="#">Piazza</a></li>
+          <li><a href="#">Zoom Meetings</a></li>
+          <li>
+            <a href="/kanbas/assignments/index">Assignments</a>
+          </li>
+          <li><a href="#">Quizzes</a></li>
+          <li>
+            <a href="/kanbas/grades">Grades</a>
+          </li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">Panopto Video</a></li>
+          <li><a href="#">Discussions</a></li>
+          <li><a href="#">Announcements</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Files</a></li>
+          <li><a href="#">Rubrics</a></li>
+          <li><a href="#">Outcomes</a></li>
+          <li><a href="#">Collaborations</a></li>
+          <li><a href="#">Syllabus</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
 
-        <td>
-          <ul>
-            <li>
-              <a href="/kanbas/home">Home</a>
-            </li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li>
-              <a href="/kanbas/assignments/index">Assignments</a>
-            </li>
-            <li><a href="#">Quizzes</a></li>
-            <li>
-              <a href="/kanbas/grades">Grades</a>
-            </li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="#">Settings</a></li>
-          </ul>
-        </td>
+    <div class="col-12 col-md-6 col-xl-9">
 
-        <td>
-          <select>
+
+
+
+
+      <div class="mb-3 w-75">
+        <label for="name_input" class="form-label">Assignment Name</label>
+        <input type="text" class="form-control" id="name_input" placeholder="A1 - ENV + HTML">
+      </div>
+
+      <div class="mb-3 w-75">
+        <textarea class="form-control" id="assignment-description" rows="10">
+          This assignment describes how to install the development environment 
+          for creating and working with Web applications we will be developing this semester. We
+          will add new content every week, pushing the code to a GitHub source repository, and then
+          deplying the content to a remote server hosted on Netlfy.
+        </textarea>
+      </div>
+
+      <div class="mb-3 w-50">
+        <label for="points" class="form-label">Points</label>
+        <input type="text" class="form-control" id="points" placeholder="100">
+      </div>
+
+      <div>
+        <div class="mb-3 w-50">
+        <label for="assignment-group" class="form-label">Assignment Group</label>
+        <select class="form-select" id="assignment-group">
+          <option selected>   ASSIGNMENTS</option>
+       </select>
+      </div>
+     
+
+      <div>
+        <div class="mb-3 w-50">
+        <label for="assignment-group" class="form-label">Display Grade as</label>
+        <select class="form-select" id="assignment-group">
+          <option selected>Percentage</option>
+       </select>
+      </div>
+
+
+
+
+
+      <button type="button" class="btn btn-light">Add another link</button>
+      <button type="button" class="btn btn-light">Cancel</button>
+      <button type="button" class="btn btn-danger">Save Profile</button>
+
+
+     
+
+  </div>
+
+  </body>
+</html>
+
+
+
+
+
+<!--           <select>
             <option value="SPDGRD">SpeedGrader</option>
           </select>
           <br />
@@ -178,8 +298,4 @@
 
           <button type="button">Cancel</button>
           <button type="button">Save</button>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
+        -->
