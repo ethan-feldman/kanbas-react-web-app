@@ -20,7 +20,10 @@ function Assignments() {
             key={assignment._id}
             to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
             className="list-group-item">
+              <div>
               <span className="text">{assignment.title}</span>
+              </div>
+
               <div className="float-end">
                 <span>
               <AiFillCheckCircle color={'green'}/>
