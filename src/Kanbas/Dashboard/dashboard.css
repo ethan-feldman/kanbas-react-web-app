@@ -1,0 +1,8 @@
+.cardgroup-style {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.cardgroup-style .list-group-item {
+  padding-top: 50px;
+}
