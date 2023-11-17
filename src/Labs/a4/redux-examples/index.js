@@ -7,7 +7,7 @@ import TodoList from "./todos/TodoList";
 const ReduxExamples = () => {
   return(
     <div>
-      <h2>Redux</h2>
+      <h2>Redux Examples</h2>
       <HelloRedux/>
       <CounterRedux/>
       <TodoList/>
