@@ -1,8 +1,9 @@
-import ModuleList from "./ModuleList";
+import List from "./List";
 import Button from 'react-bootstrap/Button';
 import {AiOutlineCheckCircle} from "react-icons/ai";
 
 function Modules() {
+
   return (
     <div>
       <h2>Modules</h2>
@@ -13,7 +14,7 @@ function Modules() {
         Publish All
       </Button>{' '}
       <Button variant="danger">Module</Button>{' '}
-      <ModuleList />
+      <List />
     </div>
   );
 }

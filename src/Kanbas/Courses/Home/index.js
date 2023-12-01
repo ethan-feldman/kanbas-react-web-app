@@ -1,11 +1,11 @@
-import ModuleList from "../Modules/ModuleList";
+import List from "../Modules/List";
 
 
 function Home() {
   return (
     <div>
       <h2>Home</h2>
-      <ModuleList />
+      <List />
       <h2>Status</h2>
     </div>
   );

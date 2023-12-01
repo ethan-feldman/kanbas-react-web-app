@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import Button from 'react-bootstrap/Button';
@@ -7,17 +7,51 @@ import { Card } from "react-bootstrap/Card";
 import { FaEllipsisV, FaCaretDown, FaPlus, FaCheckCircle } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useSelector, useDispatch } from "react-redux";
+import { createContext } from 'react';
 import {
   addModule,
   deleteModule,
   updateModule,
   setModule,
-} from "./modulesReducer";
+  setModules,
+  createModule
+
+} from "./reducer";
+import * as client from "./client";
 
 
 
 function ModuleList() {
-  const { courseId } = useParams();
+    const handleDeleteModule = (moduleId) => {
+        client.deleteModule(moduleId).then((status) => {
+          dispatch(deleteModule(moduleId));
+        });
+      };
+    
+    const { courseId } = useParams();
+
+    useEffect(() => {
+        client.findModulesForCourse(courseId).then((modules) =>
+            dispatch(setModules(modules))
+        );
+    }, [courseId]);
+
+
+    const handleAddModule = () => {
+      client.createModule(courseId, module).then((module) => {
+        dispatch(addModule(module));
+      });
+    };
+  
+
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
@@ -26,7 +60,7 @@ function ModuleList() {
     <div> 
       <ul className="list-group module-groups">
       <li className="list-group-item">
-        <button onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+        <button onClick={handleAddModule}>
           Add</button>
         <button onClick={() => dispatch(updateModule(module))}>
         Update</button>
@@ -47,7 +81,7 @@ function ModuleList() {
         .map((module, index) => (
             <div key={index}>
                 <li className="list-group-item list-group-item-secondary">
-                <button onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
+                <button onClick={() =>  handleDeleteModule(module._id)}>Delete</button>
                 <button onClick={() => dispatch(setModule(module))}>Edit</button> 
                   <FontAwesomeIcon icon={FaEllipsisV} className="ellipse-color" />
                   <FontAwesomeIcon icon={FaEllipsisV} className="ellipse-color icon-space2" />
@@ -86,31 +120,3 @@ function ModuleList() {
   }
 
 export default ModuleList;
-
-{
-  
-/* <div className="w-75">
-<div className="list-group">
-  {
-   modules.filter((module) => module.course === courseId)
-     .map((module, index) => (
-    <div key={index} className="list-group-item">
-      <div>
-        <span className="text">
-        <h2>{module.name}</h2>
-         <p>{module.description}</p>
-        </span>
-        </div>
-
-        <div className="float-end">
-        <AiOutlineCheckCircle style ={{color: 'green'}} size={30}/>
-        <AiOutlinePlus style ={{color: 'gray'}} size={30}/>
-        <AiOutlineMore style ={{color: 'gray'}} size={30}/>
-        </div>
-        
-   </div>
-  ))
-  }
-
-</div>
-</div> */}
